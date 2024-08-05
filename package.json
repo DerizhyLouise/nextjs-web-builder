@@ -1,5 +1,5 @@
 {
-  "name": "page-builder",
+  "name": "nextjs-web-builder",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,14 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "next": "14.2.5",
+    "@codemirror/commands": "^6.6.0",
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@grapesjs/react": "^1.0.0",
+    "@uiw/codemirror-theme-aura": "^4.23.0",
+    "@uiw/react-codemirror": "^4.23.0",
+    "grapesjs": "^0.21.12",
+    "grapesjs-preset-webpage": "^1.0.3"
   },
   "devDependencies": {
     "typescript": "^5",
