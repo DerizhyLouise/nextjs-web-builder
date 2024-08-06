@@ -20,7 +20,8 @@
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
-		"src/components/layout.js"
+		"src/components/layout.js",
+		"src/pages/editor/[id].tsx"
 	],
 	"exclude": ["node_modules"]
 }
