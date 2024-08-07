@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import RingLoader from "react-spinners/RingLoader";
 
-type Page = { id: string; name: string; slug: string };
+type Page = { _id: string; name: string; slug: string };
 
 const Home = () => {
-	const [name, setName] = useState("");
+	const [name, setName] = useState<string>("");
 	const [isValid, setIsValid] = useState(true);
-	const [pages, setPages] = useState([]);
+	const [pages, setPages] = useState<Page[]>([]);
 	const [error, setError] = useState("");
 	const [loading, setLoading] = useState(false);
 
@@ -81,6 +81,7 @@ const Home = () => {
 					/>
 				</div>
 			)}
+			<h1 className="text-center text-6xl mb-4">Next.js Web Builder</h1>
 			<form id="create-page" noValidate>
 				<div className="text-4xl border-b-2 border-secondary pb-4 font-semibold px-4">
 					Create Page
@@ -141,7 +142,7 @@ const Home = () => {
 					</thead>
 					<tbody>
 						{pages
-							? pages.map((page) => (
+							? pages.map((page: Page) => (
 									<tr
 										key={page._id}
 										className="grid grid-cols-10"
