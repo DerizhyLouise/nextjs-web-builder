@@ -6,3 +6,4 @@ This is a Web Builder Project
 * GrapesJs
 * CodeMirror
 * MongoDB
+* Tailwind CSS
