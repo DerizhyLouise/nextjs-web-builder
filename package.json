@@ -12,7 +12,6 @@
     "@codemirror/commands": "^6.6.0",
     "@codemirror/lang-javascript": "^6.2.2",
     "@grapesjs/react": "^1.0.0",
-    "@material-tailwind/react": "^2.1.9",
     "@uiw/codemirror-theme-aura": "^4.23.0",
     "@uiw/react-codemirror": "^4.23.0",
     "grapesjs": "^0.21.12",
