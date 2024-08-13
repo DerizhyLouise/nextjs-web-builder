@@ -6,7 +6,7 @@ export default async function handler(
 	res: NextApiResponse
 ) {
 	try {
-		let { data } = req.body;
+		let { data, code, html, css } = req.body;
 		let pageId = req.query.id;
 		const client = await clientPromise;
 		const DB = client.db("next-web-builder");
@@ -15,6 +15,9 @@ export default async function handler(
 		const pageDetail = {
 			data: data,
 			pageId: pageId,
+			code: code,
+			html: html,
+			css: css,
 		};
 
 		const exist = await collection.findOne({ pageId: pageId });
